@@ -1,0 +1,476 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size:18px;
+}
+
+header{
+	display: flex;
+	background-color: #72B5A4;
+	align-items: center;
+	height: 100px;
+	justify-content: space-between;
+	border-bottom: 10px solid #F15E46;
+	top: 0;
+}
+#logo{
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
+}
+
+input:hover, textarea:hover{
+	background-color: #F7F7F7;
+}
+input:focus, textarea:focus{
+	border: 3px solid #F15E46;
+	background-color: #F7F7F7;
+}
+main{
+	height: 100%;
+	background-color: #F7F7F7;
+}
+
+.titulos{
+	padding: 20px 0px;
+	margin: 0px 10px;
+}
+h1{
+	font-size: 30px;
+}
+h2{
+	font-size: 26px;
+}
+strong{
+	color: #F15E46;
+	font-size: 30px;
+}
+.container-2{
+	background-color: #E6E6E6;
+	padding: 15px;
+}
+.card-container-1{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 0px 0px 20px 0px;
+}
+.card-container-2{
+	background-color: #E6E6E6;
+	padding: 0px 0px 20px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.card-1, 
+.card-2{
+	background-color: #FFF;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 100%;
+	margin: 20px 20px;
+	padding: 2px 2px;
+	border-radius: 30px;
+	transition: all 0.4s;
+}
+.card-1{
+	border: 2px solid #F15E46;
+}
+.card-2{
+	border: 2px solid #72B5A4;
+}
+.card-1 .card-header, .card-2 .card-header{
+	margin: -4px;
+	padding: 10px;
+	font-size: 23px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	font-weight: bold;
+	color: #FFF;
+}
+.card-1 .card-header{
+	background-color: #F15E46;
+}
+.card-2 .card-header{
+	background-color: #72B5A4;
+}
+.card-content{
+	padding: 20px 20px 0px 20px;
+}
+.card-footer img{
+	width: 100px;
+}
+
+.card-1:hover, .card-2:hover{
+	transform: scale(1.1);
+	transition: all 0.7s;
+}
+
+form{
+	padding: 30px 0px;
+	display: block;
+}
+form input, 
+form textarea{
+	height: 25px;
+	font-size: 15px;
+}
+form textarea{
+	height: 80px;
+	text-align: left;
+	padding: 8px;
+}
+#botao-enviar{
+	margin-top: 20px;
+	border: 2px solid #72B5A4;
+	background-color: #99B8AF;
+	border-radius: 30px;
+	width: 120px;
+	height: 35px;
+	padding: 2px 10px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+#botao-enviar:hover{
+	opacity: 0.8;
+	transform: scale(1.2);
+	transition: all 0.7s;
+}
+
+#volta-topo{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
+.seta-icon{
+	width: 75px;
+	filter: drop-shadow(2px 2px 6px #777);
+}
+@media(max-width: 1115px){
+	.card-1, .card-2{
+		width: 80%;
+	}
+}
+
+.searchBox{
+    position: relative;
+}
+
+.searchBox .pesquisar-botao{
+    position: absolute;
+    bottom: -85px;
+    right: 5px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #72B5A4;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.searchToggle.ativar ~ .pesquisar-botao{
+    bottom: -74px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.pesquisar-botao::before{
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: #72B5A4;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.pesquisar-botao input{
+    height: 100%;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #F15E46;
+    background-color: #FFF;
+}
+
+.pesquisar-botao i{
+    position: absolute;
+    color: #72B5A4;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.searchToggle{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.searchToggle i{
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.searchToggle i.cancel{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchToggle.ativar i.cancel{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchToggle.ativar i.pesquisar{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* rodapé */
+
+footer{
+    position: relative;
+    background: #72B5A4;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background: #F15E46;
+}
+
+footer .content{
+    padding: 30px 40px 40px 40px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+footer .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content .top .logo_detalhes{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+footer .content .links-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .links-boxes .box{
+    width: calc(100% / 4 - 10px);
+}
+
+.content .links-boxes .box .links_nomes{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.links-boxes .box .links_nomes::before{
+    content: '';
+    position: absolute;
+    left: 10;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+}
+
+.content .links-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+}
+
+.content .links-boxes .box li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+}
+
+.content .links-boxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.content .links-boxes .input-box{
+    margin-right: 55px;
+}
+
+.links-boxes .input-box input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #F15E46;
+    background: #F15E46;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.links-boxes .input-box input::placeholder{
+    color: #72B5A4;
+    font-size: 16px;
+}
+
+.links-boxes .input-box input[type="button"]{
+    background: #fff;
+    color: #72B5A4;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.input-box input[type="button"]:hover{
+    opacity: 1;
+}
+
+footer .botao_detalhes{
+    width: 100%;
+    background: #F15E46;
+}
+
+footer .botao_detalhes .botao_texto{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao_detalhes .botao_texto span, 
+.botao_detalhes .botao_texto a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.botao_detalhes .botao_texto a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.botao_detalhes .botao_texto a{
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    footer .content .links-boxes{
+        flex-wrap: wrap;
+    }
+    footer .content .links-boxes .input-box{
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer{
+        position: relative;
+    }
+    .content .top .logo_detalhes{
+        font-size: 26px;
+    }
+    .content .top .media_icons a{
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    footer .content .links-boxes .box{
+        width: calc(100% / 2 - 10px);
+    }
+    footer .content .links-boxes .input-box{
+        width: 60%;
+    }
+    .botao_detalhes .botao_texto span, 
+    .botao_detalhes .botao_texto a{
+    font-size: 12px;
+    }
+    footer::before{
+        top: 115px;
+    }
+}
+@media (max-width: 520px) {
+    footer::before{
+        top: 145px;
+    }
+    footer .content .top{
+        flex-direction: column;
+    }
+    .content .top .media_icons{
+        margin-top: 16px;
+    }
+    footer .content .links-boxes .box{
+        width: calc(100% / 1 - 10px);
+    }
+    footer .content .links-boxes .input-box{
+        width: 100%;
+    }
+}
+
+@media (max-width: 325px) {
+    footer::before{
+        top: 185px;
+    }
+    footer .content .top{
+        flex-direction: column;
+    }
+    .content .top .media_icons{
+        margin-top: 16px;
+    }
+    footer .content .links-boxes .box{
+        width: calc(100% / 1 - 10px);
+    }
+    footer .content .links-boxes .input-box{
+        width: 100%;
+    }
+}
+
