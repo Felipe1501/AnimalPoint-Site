@@ -30,27 +30,15 @@ body {
 header {
     color: whitesmoke;
     height: 130px;
+    margin-top: -130px;
     background-color: var(--bg-Header-color);
     display: block;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
     font-family: var(--font-principal-family);
 }
-/* pesquisar antigo
-.search{
-    border-radius: 10px;
-    padding: 10px;
-    border: 0.5px solid whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-    height: 42px;
-}
 
-.search input{
-    height: 42px;
-    width: 280px;
-    min-width: 280px;
-}
-*/
 sub-header {
     align-items: center;
     width: 90%;
@@ -108,12 +96,14 @@ nav ul li a:hover {
 }
 
 .home {
-    background-image: url('assets/images/img-scroll-patas.png');
-    background-repeat: no-repeat;
-    background-position-y: 430px;
+    background: url('./../images/img-scroll-patas.png');
+    background-repeat: repeat-x;
+    background-position-y: bottom;
     display: flex;
+    margin-top: 130px;
     width: 100%;
     font-family: var(--font-principal-family);
+    
 }
 
 .home .col {
@@ -151,7 +141,7 @@ nav ul li a:hover {
 }
 
 .servicos {
-    background-image: url(assets/images/Background-Services.png);
+    background: url('../images/Background-Services.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -159,7 +149,9 @@ nav ul li a:hover {
 }
 
 .servicos .c-carousel {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
     height: 75vh;
 }
 
@@ -213,6 +205,8 @@ nav ul li a:hover {
 
 .arrow i{
    transform: scale(5,5); 
+   cursor: pointer;
+   text-shadow: 0.5px 0.5px 3px black;
 }
 
 .js-carousel--simple-dots {
@@ -233,8 +227,12 @@ span {
     color: var(--bg-Header-second-color);
 }
 
+.parceiros{
+    height: 100vh;
+}
+
 .sobre {
-    background-image: url(assets/images/background-Parceiros.png);
+    background-image: url(../images/background-Parceiros.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -267,99 +265,35 @@ span {
 .sobre article .card .card-Content {
     width: 75%;
     font-weight: 500;
-    color: var(--bg-Header-color);
+    color: black;
     font-size: 18px;
     margin: 5% 10%;
 }
-
-.searchToggle{
-    height: 40px;
-    width: 40px;
+#divBusca{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-}
+    background-color: none;
+    border:#fff solid 1px;
+    border-radius: 10px;
+    width:300px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:15px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
 
-
-.searchToggle i {
-    position: absolute;
-    color: white;
-    font-size: 22px;
+  .bx-search-alt{
     cursor: pointer;
-    transition: all 0.3s ease;
-}
+  }
+.arrow:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 
-.searchToggle i.cancel {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchToggle.ativar i.cancel {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.searchToggle.ativar i.pesquisar {
-    opacity: 0;
-    pointer-events: none;
-}
-
-
-.searchBox {
-    position: relative;
-}
-
-.searchBox .pesquisar-botao {
-
-    height: 50px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 3px;
-    border-radius: 6px;
-    box-shadow: 0 5px 5px white;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.searchToggle.ativar ~ .pesquisar-botao {
-    bottom: -74px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.pesquisar-botao::before {
-    content: '';
-    position: absolute;
-    right: 14px;
-    top: -4px;
-    height: 12px;
-    width: 12px;
-    background-color: white;
-    transform: rotate(-45deg);
-    z-index: -1;
-}
-
-.pesquisar-botao input {
-    height: 100%;
-    width: 100%;
-    padding: 0 45px 0 15px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    font-size: 22px;
-    font-weight: 400;
-    color: #FF7556;
-    background-color: azure;
-}
-
-.pesquisar-botao i {
-    position: absolute;
-    color: #FF7556;
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
 }
