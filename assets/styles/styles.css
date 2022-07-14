@@ -13,6 +13,24 @@
     --font-principal-family: 'Trispace', sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+    background: none;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px none;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-Header-second-color);
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +43,7 @@ html {
 
 body {
     background-color: var(--bg-body-color);
+    overflow-x: hidden;
 }
 
 header {
@@ -278,7 +297,11 @@ span {
     width:300px;
   }
   
-  #txtBusca{
+  #divBusca div {
+    display: flex;
+    line-height: 30px;
+  }
+  #inputSearch{
     float:left;
     background-color:transparent;
     padding-left:15px;
@@ -288,7 +311,7 @@ span {
     height:32px;
     width:260px;
   }
-
+  
   .bx-search-alt{
     cursor: pointer;
   }
