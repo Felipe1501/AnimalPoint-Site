@@ -288,33 +288,6 @@ span {
     font-size: 18px;
     margin: 5% 10%;
 }
-#divBusca{
-    display: flex;
-    align-items: center;
-    background-color: none;
-    border:#fff solid 1px;
-    border-radius: 10px;
-    width:300px;
-  }
-  
-  #divBusca div {
-    display: flex;
-    line-height: 30px;
-  }
-  #inputSearch{
-    float:left;
-    background-color:transparent;
-    padding-left:15px;
-    font-style:italic;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:260px;
-  }
-  
-  .bx-search-alt{
-    cursor: pointer;
-  }
 .arrow:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
