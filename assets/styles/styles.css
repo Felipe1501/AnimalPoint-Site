@@ -296,5 +296,26 @@ span {
 .arrow:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+}
 
+.faq article{
+    margin: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.faq article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    border: 0.5px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+.answer{
+    color: var(--font-second-color);
 }
