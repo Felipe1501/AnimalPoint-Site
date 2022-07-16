@@ -305,7 +305,6 @@ span {
     justify-content: space-around;
     height: 400px;
 }
-
 .faq article div{
     display: flex;
     flex-direction: column;
@@ -318,4 +317,47 @@ span {
 
 .answer{
     color: var(--font-second-color);
+}
+footer{
+    background-color: var(--bg-Header-color);
+    height: 175px;
+    font-family: 'Trispace', sans-serif;
+    color: white;
+    width: 100%;
+}
+.upper-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+}
+.upper-left-footer div img{
+    width: 200px;
+}
+.upper-right-footer{
+    display: flex;
+    width: 400px;
+    margin-right: 50px;
+}
+.symetra-footer, .social-media-footer{
+    width: 200px;
+}
+.symetra-footer div a{
+    color: white;
+}
+.icones-social-media{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.icones-social-media a img{
+    width: 30px;
+}
+.lower-footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.7;
 }
