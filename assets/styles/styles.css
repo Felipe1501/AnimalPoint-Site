@@ -318,6 +318,64 @@ span {
 .answer{
     color: var(--font-second-color);
 }
+
+.sac {
+    background: url('../images/background-Sac.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sac .subTitle-session {
+    margin: 35px;
+}
+
+.sac .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sac .content .col{
+    width: auto;
+}
+
+.sac .content .col form{
+    height: 500px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.sac .content .col form label {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.sac .content .col form input, textarea {
+    height: 30px;
+    background-color: #F0F0F0; 
+    border-radius: 5px;
+    border: 0.5px solid black;
+    width: 450px;
+}
+
+.sac .content .col form .button {
+    background-color: var(--bg-Header-color);
+    border: 1px solid black;
+    color: var(--font-light-color);
+    font-size: 26px;
+}
+
+.sac .content .col ul {
+    list-style: none;
+}
+
+.sac .content .col ul li{
+    margin: 15px 0;
+}
+
+
 footer{
     background-color: var(--bg-Header-color);
     height: 175px;
