@@ -83,6 +83,12 @@ nav ul {
     list-style: none;
     width: 100%;
 }
+nav ul li{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 nav ul li a {
     text-decoration: none;
@@ -100,6 +106,7 @@ nav ul li a:hover {
 
 .container .title-session {
 
+    padding-top: 10px;
     font-size: 48px;
     color: var(--font-second-color);
     text-transform: uppercase;
@@ -111,7 +118,6 @@ nav ul li a:hover {
     text-transform: capitalize;
     text-align: center;
     margin: 20px 0;
-
 }
 
 .home {
@@ -186,7 +192,6 @@ nav ul li a:hover {
     width: 500px;
     max-width: 500px;
     max-height: 480px;
-    min-height: 480px;
     background-color: var(--bg-card-color);
 }
 
