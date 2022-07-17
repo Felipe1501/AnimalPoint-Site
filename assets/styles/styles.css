@@ -18,18 +18,18 @@
     width: 3px;
     background: none;
     height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px none;
     border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: var(--bg-Header-second-color);
-  }
+}
 
 * {
     margin: 0;
@@ -83,7 +83,8 @@ nav ul {
     list-style: none;
     width: 100%;
 }
-nav ul li{
+
+nav ul li {
     width: 200px;
     display: flex;
     align-items: center;
@@ -128,7 +129,7 @@ nav ul li a:hover {
     margin-top: 130px;
     width: 100%;
     font-family: var(--font-principal-family);
-    
+
 }
 
 .home .col {
@@ -171,16 +172,17 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 105vh;
+    width: 100vw;
 }
 
-.servicos .c-carousel {
+.servicos .glider {
     display: flex;
     flex-direction: row;
     width: 100vw;
     height: 75vh;
 }
 
-.servicos .c-carousel .card {
+.servicos .glider .card {
     border: 2px solid #42B6A7;
     border-radius: 8px;
     box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.637);
@@ -195,52 +197,41 @@ nav ul li a:hover {
     background-color: var(--bg-card-color);
 }
 
-.servicos .c-carousel .card .card-title {
+.servicos .glider .card .card-title {
     font-size: 26px;
     text-transform: uppercase;
     color: var(--font-second-color);
 }
 
-.servicos .c-carousel .card .card-img {
+.servicos .glider .card .card-img {
     height: 175px;
     width: 250px;
 }
 
-.servicos .c-carousel .card .card-content {
+.servicos .glider .card .card-content {
     width: 80%;
     font-size: 22px;
     margin: 15px;
 }
 
-.arrows {
-    margin: 0 2vw;
-    position: absolute;
-    top: 150%;
-    width: 95vw;
-    display: flex;
-    justify-content: space-between;
+
+.arrows{
     z-index: 2;
+    position: absolute;
+    top: 40%;
+    width: 99vw;
+    right: 35px;
 }
 
-.arrow{
-   background: none;
-   border: none;
+.arrows .bx{
+    transform: scale(1.6);
 }
 
-.arrow i{
-   transform: scale(5,5); 
-   cursor: pointer;
-   text-shadow: 0.5px 0.5px 3px black;
-}
-
-.js-carousel--simple-dots {
-    display: none;
-}
 
 .gallery {
     width: 100%;
     text-align: center;
-    margin: 150px 0 30px 0;
+    margin: 30 0 30px 0;
 }
 
 .gallery img {
@@ -252,7 +243,7 @@ span {
     color: var(--bg-Header-second-color);
 }
 
-.parceiros{
+.parceiros {
     height: 100vh;
 }
 
@@ -294,19 +285,21 @@ span {
     font-size: 18px;
     margin: 5% 10%;
 }
-.arrow:hover{
+
+.arrow:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
 
-.faq article{
+.faq article {
     margin: 50px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 400px;
 }
-.faq article div{
+
+.faq article div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -316,7 +309,7 @@ span {
     border-left: none;
 }
 
-.answer{
+.answer {
     color: var(--font-second-color);
 }
 
@@ -337,11 +330,11 @@ span {
     width: 100%;
 }
 
-.sac .content .col{
+.sac .content .col {
     width: auto;
 }
 
-.sac .content .col form{
+.sac .content .col form {
     height: 500px;
     justify-content: space-around;
     display: flex;
@@ -353,9 +346,10 @@ span {
     font-size: 22px;
 }
 
-.sac .content .col form input, textarea {
+.sac .content .col form input,
+textarea {
     height: 30px;
-    background-color: #F0F0F0; 
+    background-color: #F0F0F0;
     border-radius: 5px;
     border: 0.5px solid black;
     width: 450px;
@@ -372,48 +366,57 @@ span {
     list-style: none;
 }
 
-.sac .content .col ul li{
+.sac .content .col ul li {
     margin: 15px 0;
 }
 
 
-footer{
+footer {
     background-color: var(--bg-Header-color);
     height: 175px;
     font-family: 'Trispace', sans-serif;
     color: white;
     width: 100%;
 }
-.upper-footer{
+
+.upper-footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 125px;
 }
-.upper-left-footer div img{
+
+.upper-left-footer div img {
     width: 200px;
 }
-.upper-right-footer{
+
+.upper-right-footer {
     display: flex;
     width: 400px;
     margin-right: 50px;
 }
-.symetra-footer, .social-media-footer{
+
+.symetra-footer,
+.social-media-footer {
     width: 200px;
 }
-.symetra-footer div a{
+
+.symetra-footer div a {
     color: white;
 }
-.icones-social-media{
+
+.icones-social-media {
     display: flex;
     width: 60%;
     justify-content: space-between;
 }
-.icones-social-media a img{
+
+.icones-social-media a img {
     width: 30px;
 }
-.lower-footer{
+
+.lower-footer {
     height: 50px;
     width: 100%;
     display: flex;
@@ -421,6 +424,77 @@ footer{
     opacity: 0.7;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
+    .servicos .glider .card .card-title {
+        margin: 15px 0;
+    }
 
+    .servicos .glider .card .card-img {
+        height: 100px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .servicos .glider .card .card-title {
+        margin: 15px 0;
+    }
+
+    .servicos .glider .card .card-img {
+        height: 100px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 550px){
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .col {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    .home .col .phone {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+    .gallery img {
+        width: 15vw;
+        margin: 10px 10px;
+    }
+
+     .glider .card {
+        min-width: 80vw;
+        margin: 15px auto;
+     }
+
+     #sobre{
+        display: block;
+     }
+
+     #sobre article {
+        display: flex;
+        flex-direction: column;
+        max-height: 400px;
+     }
+
+     #sobre article .card{
+        margin: 15px 0;
+        font-size: 10px;  
+     };
+
+     .subTitle-session{
+        font-size: 16px;
+     }
 }
