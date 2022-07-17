@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@200;500;700&display=swap');
 
 :root {
-    --bg-Header-color: #72B5A4;
-    --bg-Header-second-color: #FF7556;
+    --bg-Header-color: #72b5a4ce;
+    --bg-green-color: #72B5A4;
+    --bg-Header-second-color: #ff7556db;
     --bg-body-color: #EAFFFA;
     --bg-card-about-color: #eafffaf3;
     --bg-card-color: whitesmoke;
@@ -28,7 +29,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--bg-Header-second-color);
+    background: var(--font-second-color);
 }
 
 * {
@@ -240,7 +241,7 @@ nav ul li a:hover {
 }
 
 span {
-    color: var(--bg-Header-second-color);
+    color: var(--font-second-color);
 }
 
 .parceiros {
@@ -356,7 +357,7 @@ textarea {
 }
 
 .sac .content .col form .button {
-    background-color: var(--bg-Header-color);
+    background-color: var(--bg-green-color);
     border: 1px solid black;
     color: var(--font-light-color);
     font-size: 26px;
@@ -372,7 +373,7 @@ textarea {
 
 
 footer {
-    background-color: var(--bg-Header-color);
+    background-color: var(--bg-green-color);
     height: 175px;
     font-family: 'Trispace', sans-serif;
     color: white;
