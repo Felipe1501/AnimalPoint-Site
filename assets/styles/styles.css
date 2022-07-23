@@ -6,7 +6,7 @@
     --bg-green-color: #72B5A4;
     --bg-Header-second-color: #ff7556db;
     --bg-body-color: #EAFFFA;
-    --bg-card-about-color: #eafffaf3;
+    --bg-card-about-color: var(--font-second-color);
     --bg-card-color: whitesmoke;
     --font-title-color: ;
     --font-light-color: whitesmoke;
