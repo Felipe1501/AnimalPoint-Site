@@ -53,7 +53,7 @@ header {
     margin-top: -130px;
     background-color: var(--bg-Header-color);
     display: block;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 3;
     font-family: var(--font-principal-family);
@@ -103,7 +103,7 @@ nav ul li a:hover {
 }
 
 .container {
-    font-family: var(--font-principal-family)
+    font-family: var(--font-principal-family);
 }
 
 .container .title-session {
@@ -113,22 +113,25 @@ nav ul li a:hover {
     color: var(--font-second-color);
     text-transform: uppercase;
     text-align: center;
+    margin: 20px 20px;
 }
 
 .container .subTitle-session {
     font-size: 32px;
     text-transform: capitalize;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 .home {
+    min-height: 600px;
+    max-height: 100%;
     background: url('./../images/img-scroll-patas.png');
     background-repeat: repeat-x;
     background-position-y: bottom;
     display: flex;
     margin-top: 130px;
-    width: 100%;
+    width: 100vw;
     font-family: var(--font-principal-family);
 
 }
@@ -168,11 +171,12 @@ nav ul li a:hover {
 }
 
 .servicos {
+    min-height: 700px;
+    max-height: 130%;
     background: url('../images/Background-Services.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 105vh;
     width: 100vw;
 }
 
@@ -180,7 +184,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 75vh;
+    max-height: 100%;
 }
 
 .servicos .glider .card {
@@ -192,9 +196,10 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 500px;
+    min-width: 500px;
     max-width: 500px;
-    max-height: 480px;
+    min-height: 480px;
+    min-height: 480px;
     background-color: var(--bg-card-color);
 }
 
@@ -245,7 +250,8 @@ span {
 }
 
 .parceiros {
-    height: 100vh;
+    min-height: 400px;
+    max-height: 100%;
 }
 
 .sobre {
@@ -253,12 +259,16 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 700px;
+    max-height: 100%;
 }
 
 .sobre article {
-    margin: 30px 0;
+    min-height: 400px;
+    max-height: 100%;
+    margin: 30px 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -270,6 +280,7 @@ span {
     border: 0.1px solid rgba(0, 0, 0, 0.274);
     border-radius: 8px;
     text-transform: capitalize;
+    margin: 30px 0px;
 }
 
 .sobre article .card h1 {
@@ -304,7 +315,8 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100px;
+    min-height: 120px;
+    max-height: 100%;
     border: 0.5px solid black;
     border-right: none;
     border-left: none;
@@ -329,6 +341,7 @@ span {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .sac .content .col {
@@ -373,8 +386,11 @@ textarea {
 
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--bg-green-color);
-    height: 175px;
+    min-height:  5px;
+    max-height: 100%;
     font-family: 'Trispace', sans-serif;
     color: white;
     width: 100%;
@@ -386,6 +402,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 125px;
+    flex-wrap: wrap;
 }
 
 .upper-left-footer div img {
@@ -418,7 +435,9 @@ footer {
 }
 
 .lower-footer {
-    height: 50px;
+    min-height: 50px;
+    max-height: 100%;
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -445,6 +464,9 @@ footer {
         height: 100px;
         width: 150px;
     }
+}
+@media(max-width: 750px){
+    
 }
 
 @media (max-width: 550px){
